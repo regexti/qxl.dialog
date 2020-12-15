@@ -113,7 +113,7 @@ qx.Class.define("qxl.dialog.Confirm", {
         height: 16,
         scale: true
       });
-      yesButton.setLabel(this.tr("yes"));
+      yesButton.setLabel(this.tr("sim"));
       // no button
       let noButton = (this._noButton = new qx.ui.form.Button());
 
@@ -126,7 +126,7 @@ qx.Class.define("qxl.dialog.Confirm", {
         height: 16,
         scale: true
       });
-      noButton.setLabel(this.tr("no"));
+      noButton.setLabel(this.tr("não"));
       let cancelButton = this._createCancelButton();
       buttonPane.add(yesButton);
       buttonPane.add(noButton);
