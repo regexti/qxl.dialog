@@ -14,7 +14,7 @@ qx.Theme.define("qxl.dialog.theme.Theme",
     color : qx.theme.modern.Color,
     decoration : qx.theme.modern.Decoration,
     font : qx.theme.modern.Font,
-    icon : qxl.dialog.theme.icon.Tango,
+    icon : qx.theme.icon.Tango,
     appearance : qx.theme.modern.Appearance
   }
 });
