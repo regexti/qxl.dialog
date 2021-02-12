@@ -30,7 +30,7 @@ qx.Class.define("qxl.dialog.Alert", {
       let hbox = new qx.ui.container.Composite(new qx.ui.layout.HBox(10));
       container.add(hbox);
       this._image = new qx.ui.basic.Image(
-        this.getImage() || "qxl.dialog.icon.info"
+        this.getImage() || "icon/48/status/dialog-information.png"
       ).set({
         scale: true,
         height: 32,

@@ -36,7 +36,7 @@ qx.Class.define("qxl.dialog.Confirm", {
     yesButtonLabel: {
       check: "String",
       nullable: false,
-      init: "Yes",
+      init: "Sim",
       event: "changeYesButtonLabel"
     },
 
@@ -46,7 +46,7 @@ qx.Class.define("qxl.dialog.Confirm", {
     yesButtonIcon: {
       check: "String",
       nullable: true,
-      init: "qxl.dialog.icon.ok",
+      init: "icon/16/actions/dialog-ok.png",
       event: "changeYesButtonIcon"
     },
 
@@ -56,7 +56,7 @@ qx.Class.define("qxl.dialog.Confirm", {
     noButtonLabel: {
       check: "String",
       nullable: false,
-      init: "No",
+      init: "Não",
       event: "changeNoButtonLabel"
     },
 
@@ -66,7 +66,7 @@ qx.Class.define("qxl.dialog.Confirm", {
     noButtonIcon: {
       check: "String",
       nullable: true,
-      init: "qxl.dialog.icon.cancel",
+      init: "icon/16/actions/dialog-cancel.png",
       event: "changeNoButtonIcon"
     },
 
@@ -113,7 +113,7 @@ qx.Class.define("qxl.dialog.Confirm", {
         height: 16,
         scale: true
       });
-      yesButton.setLabel(this.tr("sim"));
+      yesButton.setLabel(this.tr("Sim"));
       // no button
       let noButton = (this._noButton = new qx.ui.form.Button());
 
@@ -126,7 +126,7 @@ qx.Class.define("qxl.dialog.Confirm", {
         height: 16,
         scale: true
       });
-      noButton.setLabel(this.tr("não"));
+      noButton.setLabel("Não");
       let cancelButton = this._createCancelButton();
       buttonPane.add(yesButton);
       buttonPane.add(noButton);

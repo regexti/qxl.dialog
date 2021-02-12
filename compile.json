@@ -57,8 +57,6 @@
     }
   ],
   "defaultTarget": "source",
-  "locales": [
-    "en"
-  ],
+  "locales": ["pt_BR","pt","en"],
   "$schema": "https://qooxdoo.org/schema/compile-1-0-0.json"
 }

@@ -67,7 +67,7 @@ qx.Class.define("qxl.dialog.Dialog", {
      */
     alert: function(message="", callback=null, context=null, caption="") {
       return new qxl.dialog.Alert({
-        message, callback, context, caption, image: "qxl.dialog.icon.info",
+        message, callback, context, caption, image: "icon/48/status/dialog-information.png",
       }).show();
     },
 
@@ -81,7 +81,7 @@ qx.Class.define("qxl.dialog.Dialog", {
      */
     error(message="", callback=null, context=null, caption="") {
       return new qxl.dialog.Alert({
-        message, callback, context, caption, image: "qxl.dialog.icon.error"
+        message, callback, context, caption, image: "icon/48/status/dialog-error.png"
       }).show();
     },
 
@@ -95,7 +95,7 @@ qx.Class.define("qxl.dialog.Dialog", {
      */
     warning(message="", callback=null, context=null, caption="") {
       return new qxl.dialog.Alert({
-        message, callback, context, caption, image: "qxl.dialog.icon.warning",
+        message, callback, context, caption, image: "icon/48/status/dialog-warning.png",
       }).show();
     },
 
@@ -405,7 +405,7 @@ qx.Class.define("qxl.dialog.Dialog", {
      */
     _createOkButton: function(noFocus=false) {
       let okButton = (this._okButton = new qx.ui.form.Button(this.tr("OK")));
-      okButton.setIcon("qxl.dialog.icon.ok");
+      okButton.setIcon("icon/22/actions/dialog-ok.png");
       okButton.getChildControl("icon").set({
         width: 16,
         height: 16,
@@ -433,7 +433,7 @@ qx.Class.define("qxl.dialog.Dialog", {
         this.tr("Cancel")
       ));
       cancelButton.setAllowStretchX(false);
-      cancelButton.setIcon("qxl.dialog.icon.cancel");
+      cancelButton.setIcon("icon/22/actions/dialog-cancel.png");
       cancelButton.getChildControl("icon").set({
         width: 16,
         height: 16,
